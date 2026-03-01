@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
+# NoteVault
 
-## Project info
+NoteVault is a secure and structured note management application built to demonstrate full-stack integration using modern web technologies.  
+It focuses on authentication, user-specific data storage, and clean UI architecture.
 
-**URL**: https://lovable.dev/projects/aa174353-756f-497e-838c-24155e3428db
+---
 
-## How can I edit this code?
+## Tech Stack and Rationale
 
-There are several ways of editing your application.
+### Vite
+Used as the frontend build tool.
+- Provides fast development server
+- Optimized production builds
+- Minimal configuration
 
-**Use Lovable**
+### React
+Used for building the user interface.
+- Component-based architecture
+- Reusable UI logic
+- Efficient state-driven rendering
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/aa174353-756f-497e-838c-24155e3428db) and start prompting.
+### TypeScript
+Used for type safety.
+- Reduces runtime errors
+- Improves maintainability
+- Better development experience
 
-Changes made via Lovable will be committed automatically to this repo.
+### Supabase
+Used as Backend-as-a-Service.
+- Authentication system
+- PostgreSQL database
+- Secure user-specific data handling
+- Eliminates need for custom backend server
 
-**Use your preferred IDE**
+### Tailwind CSS
+Used for styling.
+- Utility-first CSS approach
+- Rapid UI development
+- Responsive design support
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### shadcn/ui
+Used for UI components.
+- Prebuilt accessible components
+- Clean and modern interface
+- Reduces design complexity
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Architecture Overview
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Frontend
+- React with TypeScript
+- Component-driven structure
+- Tailwind-based styling
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Backend
+- Supabase Authentication
+- Supabase PostgreSQL database
+- Secure user-based data isolation
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Application Flow
+1. User signs up or logs in.
+2. Supabase handles authentication.
+3. Notes are stored in the database.
+4. Data is fetched per authenticated user.
+5. UI updates dynamically based on state.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- User registration and login
+- Secure note storage
+- User-specific data isolation
+- Create notes
+- Edit notes
+- Delete notes
+- Responsive and minimal interface
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Future Improvements
 
-## What technologies are used for this project?
+- Folder-based note organization
+- Tag filtering
+- Markdown support
+- End-to-end encryption
+- AI-based summarization
+- Export and backup functionality
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Purpose of the Project
 
-## How can I deploy this project?
+This project demonstrates:
 
-Simply open [Lovable](https://lovable.dev/projects/aa174353-756f-497e-838c-24155e3428db) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+- Full-stack application development
+- Secure authentication handling
+- Database integration
+- Clean and scalable frontend architecture
+- Production-ready structure suitable for hackathons and portfolios
